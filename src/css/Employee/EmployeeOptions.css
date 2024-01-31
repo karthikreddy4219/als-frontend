@@ -23,20 +23,7 @@
   transition: background-color 0.3s ease;
   margin-bottom: 15px; /* Adjusted margin for better spacing */
 }
-.option::before {
-  content: ""; /* Create a pseudo-element to hold the background image */
-  position: absolute; /* Position the background image relative to the option */
-  top: 0; /* Align the background image to the top */
-  left: 0; /* Align the background image to the left */
-  width: 100%; /* Set the width of the background image to cover the entire option */
-  height: 100%; /* Set the height of the background image to cover the entire option */
-  background-image: url(../../../public/als_logo.png); /* Specify the path to your background image */
-  opacity: 0.2; /* Adjust the opacity of the background image */
-  z-index: -1; /* Set z-index to send the background image behind the option content */
-  background-size: cover; /* Cover the entire option with the background image */
-  background-repeat: no-repeat; /* Do not repeat the background image */
-  border-radius: 10px; /* Rounded corners */
-}
+
 .option:hover {
   background-color: #518cf8; /* Yellow background color on hover */
   
