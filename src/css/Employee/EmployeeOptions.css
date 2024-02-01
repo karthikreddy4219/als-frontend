@@ -10,35 +10,36 @@
 
 /* Styling for each option */
 .option {
-  width: calc(33.33% - 30px); /* Each option occupies 33.33% of the container width with a 15px gap on each side */
-  height: 150px; /* Set a fixed height for the options */
-  background-color: #fff; /* White background color */
+  width: calc(36% - 100px); /* Each option occupies 30% of the container width with a 15px gap on each side */
+  height: 200px; /* Set a fixed height for the options */
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(52, 152, 219, 0.2);
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   margin-bottom: 15px; /* Adjusted margin for better spacing */
+  background-color: #3498db; /* Blue background color for all options */
+  color: #fff; /* White text color */
 }
 
 .option:hover {
-  background-color: #518cf8; /* Yellow background color on hover */
-  
+  background-color: #29a8b9; /* Darker blue background color on hover */
+  transform: scale(1.05); /* Scale up the option on hover */
 }
 
 /* Adjustments for better spacing if needed */
 @media (max-width: 768px) {
   .option {
-    width: calc(50% - 30px); /* Each option occupies 50% of the container width on smaller screens */
+    width: calc(50% - 15px); /* Each option occupies 50% of the container width on smaller screens */
   }
 }
 
 /* Additional adjustment for smaller screens */
 @media (max-width: 480px) {
   .option {
-    width: calc(100% - 30px); /* Each option occupies 100% of the container width on even smaller screens */
+    width: calc(100% - 15px); /* Each option occupies 100% of the container width on even smaller screens */
   }
 }

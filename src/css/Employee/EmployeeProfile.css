@@ -1,100 +1,102 @@
-
 /* EmployeeProfile.css */
 
 /* Basic styling for the employee container */
 .employee-container {
-    background-color: rgba(0, 0, 0, 0.1); /* Faded background color */
-    padding: 30px; /* Increased padding */
-    border-radius: 15px; /* Increased border-radius */
-    width: 300px; /* Increased width */
-    height: 450px; /* Increased height */
-  }
-  
-  /* Styling for the profile container */
-  .profile-container {
-    display: flex;
-    flex-direction: column; /* Updated to column */
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  /* Styling for the profile image */
-  .profile-image {
-    width: 150px; /* Increased width */
-    height: 150px; /* Increased height */
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 20px; /* Increased margin bottom */
-  }
-  
-  .profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  /* Overlay for the "Add Photo" option */
-  .add-photo-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 16px; /* Increased font size */
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 8px; /* Increased padding */
-    border-radius: 8px; /* Increased border-radius */
-    display: none;
-  }
-  
-  .profile-image:hover .add-photo-overlay {
-    display: block;
-  }
-  
-  /* Styling for the employee details */
-  .details {
-    text-align: center; /* Align details to the center */
-  }
-  
-  .name {
-    font-size: 28px; /* Increased font size */
-    margin-bottom: 10px; /* Increased margin bottom */
-    font-style: italic;
-  }
-  
-  .designation {
-    font-size: 18px; /* Increased font size */
-    color: #999; /* Lighter font color */
-    font-style: italic;
-  }
-  
-  /* Styling for the modal (you can adjust this based on your design) */
-  .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px; /* Increased font size */
-    cursor: pointer;
-  }
-  
+  background-color: #f2f2f2; /* Light background color */
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  height: 450px;
+  margin-left: 1cm; /* Moved 1cm to the right */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the profile container */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Styling for the profile image */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay for the "Add Photo" option */
+.add-photo-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 8px;
+  border-radius: 8px;
+  display: none;
+}
+
+.profile-image:hover .add-photo-overlay {
+  display: block;
+}
+
+/* Styling for the employee details */
+.details {
+  text-align: center;
+}
+
+.name {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #333; /* Dark text color */
+}
+
+.designation {
+  font-size: 18px;
+  color: #666; /* Slightly darker font color */
+  font-style: italic;
+}
+
+/* Styling for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ff0000; /* Red close button color */
+}

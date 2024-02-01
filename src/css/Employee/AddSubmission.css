@@ -5,44 +5,68 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: #f2f2f2;
   padding: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #4caf50;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  max-width: 500px; /* Adjust the max-width as needed */
+  width: 100%;
+  max-height: 80vh; /* Set a maximum height, adjust as needed */
+  overflow-y: auto; /* Allow vertical scrolling */
 }
 
 .add-submission-container h2 {
   margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 1.5em;
 }
 
 .add-submission-container label {
   display: block;
   margin-bottom: 8px;
+  color: #555;
 }
 
-.add-submission-container input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
+.add-submission-container input,
+.add-submission-container select {
+  width: calc(100% - 16px);
+  padding: 10px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.add-submission-container textarea {
+  width: calc(100% - 16px);
+  padding: 10px;
+  margin-bottom: 12px;
   box-sizing: border-box;
 }
 
 .add-submission-container button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 24px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .add-submission-container button:hover {
-  background-color: #45a049;
+  background-color: #2980b9;
 }
 
 .add-submission-container button + button {
-  margin-left: 10px;
+  margin-left: 8px;
   background-color: #ccc;
-  color: black;
+  color: #333;
+}
+
+.close-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
 }
